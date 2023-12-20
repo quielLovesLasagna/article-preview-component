@@ -1,0 +1,26 @@
+.share {
+	&-icon-container {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		background-color: var(--cl-light-grayish-blue);
+		width: 4rem;
+		height: 4rem;
+		border-radius: 50%;
+		transition: all 0.2s;
+	}
+
+	&-icon {
+		width: 1.8rem;
+		height: 1.8rem;
+		transition: all 0.2s;
+	}
+
+	&-icon-container:hover {
+		background-color: var(--cl-desaturated-dark-blue);
+	}
+
+	&-icon-container:hover &-icon {
+		filter: brightness(100);
+	}
+}
