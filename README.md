@@ -23,7 +23,10 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![preview](./assets/preview-1.png)
+![preview](./assets/preview-2.png)
+![preview](./assets/preview-3.png)
+![preview](./assets/preview-4.png)
 
 ### Links
 

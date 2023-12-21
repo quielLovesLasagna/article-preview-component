@@ -1,7 +1,7 @@
 {
-	"name": "natours",
+	"name": "article-preview-component",
 	"version": "1.0.0",
-	"description": "Landing page for natours",
+	"description": "Article preview component solution",
 	"main": "index.js",
 	"scripts": {
 		"watch:sass": "node-sass sass/main.scss css/style.css -w",
