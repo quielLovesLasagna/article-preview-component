@@ -23,4 +23,61 @@
 	&-icon-container:hover &-icon {
 		filter: brightness(100);
 	}
+
+	&-social-media {
+		background-color: var(--cl-very-dark-grayish-blue);
+		position: absolute;
+		top: -50%;
+		right: 5%;
+		transform: translate(50%, -100%);
+		padding: 2rem 4rem;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		gap: 2rem;
+		border-radius: 1rem;
+		transition: all 0.2s;
+
+		// From: https://dev.to/flippedcoding/how-to-put-arrows-at-the-bottom-of-a-div-4hnn
+		&::after {
+			content: "";
+			position: absolute;
+			left: 0;
+			right: 0;
+			bottom: -15px;
+			margin: 0 auto;
+			width: 0;
+			height: 0;
+			border-top: 25px solid var(--cl-very-dark-grayish-blue);
+			border-left: 25px solid transparent;
+			border-right: 25px solid transparent;
+		}
+
+		span,
+		img {
+			display: block;
+		}
+
+		span {
+			color: var(--cl-grayish-blue);
+			text-transform: uppercase;
+			font-size: 1.4rem;
+			letter-spacing: 5px;
+		}
+	}
+}
+
+// Active state when clicked
+.share-icon-container.active {
+	background-color: var(--cl-desaturated-dark-blue);
+}
+
+.share-icon.active {
+	filter: brightness(100);
+}
+
+// Hide an element
+.hidden {
+	opacity: 0;
+	visibility: hidden;
 }

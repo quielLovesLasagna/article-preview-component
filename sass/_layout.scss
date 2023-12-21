@@ -3,16 +3,20 @@
 	width: 80rem;
 	height: 31rem;
 	border-radius: 1.5rem;
-	overflow: hidden;
 	display: grid;
 	grid-template-columns: 30rem 1fr;
 	column-gap: 5rem;
+
+	// < 850px
+	@media only screen and (max-width: 53.125em) {
+	}
 }
 
 .left {
 	background-image: url(../images/drawers.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
+	border-radius: 1.5rem 0 0 1.5rem;
 }
 
 .right {
@@ -36,6 +40,7 @@
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
+		position: relative;
 	}
 
 	&-info-container {
